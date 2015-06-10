@@ -26,16 +26,17 @@
 			</form>
 	    </article>	
 		
-
+<script>
 		//step1:https://www.parse.com/docs/js/guide#users-facebook-users
+	
 		Parse.initialize("tCgoXCh2vBlaGdUXZTiUpujvanAIWg1F9vJAnc3Y", "2ZEsXtUBRasePmWwG1axC7zIIq4DfmYnntdwg3yL");
-    window.fbAsyncInit = function() {
-  Parse.FacebookUtils.init({ // this line replaces FB.init({
-    appId      : '{1458650274433924}', // Facebook App ID
-    status     : true,  // check Facebook Login status
-    cookie     : true,  // enable cookies to allow Parse to access the session
-    xfbml      : true,  // initialize Facebook social plugins on the page
-    version    : 'v2.3' // point to the latest Facebook Graph API version
+    		window.fbAsyncInit = function() {
+		 Parse.FacebookUtils.init({ // this line replaces FB.init({
+		   appId      : '{1458650274433924}', // Facebook App ID
+		   status     : true,  // check Facebook Login status
+	           cookie     : true,  // enable cookies to allow Parse to access the session
+    		   xfbml      : true,  // initialize Facebook social plugins on the page
+	           version    : 'v2.3' // point to the latest Facebook Graph API version
 });
 };
 // Run code after the Facebook SDK is loaded.
@@ -68,7 +69,7 @@ if (response.status === 'connected') { //等等要在這邊加程式碼 使⽤�
 ￼});	
 		}
 		
-
+</script>
     <script src="js/graphApi.js"></script>		   	
     </body>
 </html>
